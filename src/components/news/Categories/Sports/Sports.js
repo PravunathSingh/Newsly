@@ -13,7 +13,7 @@ class Sports extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://newsapi.org/v2/top-headlines?category=Sports&language=en&pageSize=24&apiKey=0fb4e3906e844d25a06d3bcb65fceb49')
+        axios.get('https://newsapi.org/v2/top-headlines?category=Sports&language=en&pageSize=24&apiKey=0fb4e3906e844d25a06d3bcb65fceb49')
             .then(res => {
                 console.log(res.data.articles);
                 this.setState({news: res.data.articles})
